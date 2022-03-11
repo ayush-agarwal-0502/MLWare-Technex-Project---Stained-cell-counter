@@ -22,4 +22,12 @@ One initial and direct way to think is to do masking on the image using opencv .
 
 However , I observed that the blue layer of image is a very good representation of where the stained cell is . ( We know that an RGB image is made up of 3 layers , red , green , blue , and I decided to operate on the blue layer only ) . In the blue layer of image , even of the brown part of the image has blue also , then also the blue layer has more blackness at the point where the stained cell is . 
 
-In the blue layer , the spots with the stained cell were black and rest part white . There isnt any thresholding function in opencv which can convert less white to fully white . So I inverted the image using bitwise inversion operator .
+In the blue layer , the spots with the stained cell were black and rest part white . There isnt any thresholding function in opencv which can convert less white to fully white . So I inverted the image using bitwise inversion operator . 
+
+Now I could easily use the cv2.THRESHOLD_TOZERO to get rid of the low probablity points .
+
+Now , as per the problem statment , we were required to ignore the stained cells at the borders , hence I added another layer of black border manually on the image .
+
+Now , we have a black image with the white patches representing stained cells . To further ease up the processing , I added binary thresholding using opencv .
+
+Now , for the detection part , there are many Blob detecting algorithms , such as RegionProps ,Laplacian of Gaussian (LoG) , Difference of Gaussian (DoG) , Determinant of Hessian (DoH) in skimage ( scikit learn tools for images ) 
