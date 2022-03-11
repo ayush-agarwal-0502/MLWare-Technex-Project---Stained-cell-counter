@@ -2,6 +2,8 @@
 
 This project is about using Machine Learning models for counting the ***number of stained cells*** in the given images . This project was a submission for the event "MLWare" , held under "Technex" , the official techfest of IIT BHU Varanasi . The team members were me ( Ayush Agarwal ) and Anshuman Asauliya . The model files have been attached to this repository .
 
+Training data : https://www.kaggle.com/c/ml-ware22/data
+
 ## Our initial approach towards the problem statment :
 
 First we did a literature survey of the research papers availaible online to get an idea of the methods used for such problems before .
