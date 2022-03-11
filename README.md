@@ -30,4 +30,6 @@ Now , as per the problem statment , we were required to ignore the stained cells
 
 Now , we have a black image with the white patches representing stained cells . To further ease up the processing , I added binary thresholding using opencv .
 
-Now , for the detection part , there are many Blob detecting algorithms , such as RegionProps ,Laplacian of Gaussian (LoG) , Difference of Gaussian (DoG) , Determinant of Hessian (DoH) in skimage ( scikit learn tools for images ) 
+Now , for the detection part , there are many Blob detecting algorithms , such as RegionProps ,Laplacian of Gaussian (LoG) , Difference of Gaussian (DoG) , Determinant of Hessian (DoH) in skimage ( scikit learn tools for images ) . Due to lack of time , I could only apply RegionProps . 
+
+Initially it gave too many blobs , however , after thresholding the detected blobs by area ( i.e. ignoring the lower area blobs ) , we could achieve an MSE of about 14 , which seems to be pretty good . The model was not always exact , however it was pretty accurate (a difference of 1 or 2 mostly) in the cases of non overlapping cells . This showed that the error was high mostly due to the outlier cases ( overlapping cells , more than 50 cells in an image , whole image being largely covered with blue etc ) 
