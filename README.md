@@ -6,7 +6,7 @@ Training data : https://www.kaggle.com/c/ml-ware22/data
 
 ## Our initial approach towards the problem statment :
 
-First we did a literature survey of the research papers availaible online to get an idea of the methods used for such problems before .
+First we did a **literature survey** of the research papers availaible online to get an idea of the methods used for such problems before .
 
 The most commonly used method by researchers for the cell counting problem is using **Image Segmentation** . This can be done using **U-Nets** . Fun fact , U-Nets were invented while solving a similar problem statment to ours . However , the data given to use does not have segmentation and we are not allowed to use external data or pretrained models hence this idea was dropped by our team .
 
