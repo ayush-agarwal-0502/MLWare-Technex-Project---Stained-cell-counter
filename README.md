@@ -9,8 +9,15 @@ Training data : https://www.kaggle.com/c/ml-ware22/data
 First we did a **literature survey** of the research papers availaible online to get an idea of the methods used for such problems before .
 
 The most commonly used method by researchers for the cell counting problem is using **Image Segmentation** . This can be done using **U-Nets** . Fun fact , U-Nets were invented while solving a similar problem statment to ours . However , the data given to use does not have segmentation and we are not allowed to use external data or pretrained models hence this idea was dropped by our team .
+(Link to U Nets Image Segmentation for Biomedical Applications research paper - https://arxiv.org/pdf/1505.04597.pdf )
 
-One other way that is commonly used to solve such problems is using **Xception ML model** . It is a state of the art model for this purpose , and is closely related to the Inception model . However , as we couldn't use pretrained models , and training such a computationally expensive model was not possible on google colab as a student , hence we didn't use this idea too .
+![image](https://user-images.githubusercontent.com/86561124/157840488-94b6fd79-964a-4da4-af91-1f038b74bd05.png)
+.  .    .   .   .   . ![image](https://user-images.githubusercontent.com/86561124/157840642-00116e32-ad42-45f9-bb95-f2c01bbc8b84.png)
+
+One other way that is commonly used to solve such problems is using **Xception ML model** . It is a state of the art model for this purpose , and is closely related to the Inception model . Xception architecture is a linear stack of depthwise separable convolution layers . Xception stands for “Extreme Inception”  . However , as we couldn't use pretrained models , and training such a computationally expensive model was not possible on google colab as a student , hence we didn't use this idea too .
+(Link to Xception research paper - https://arxiv.org/pdf/1610.02357v3.pdf ) 
+
+
 
 A less common but still used way is using the **YOLO (You Only Look Once )** models for detection and counting of the cells . However , we could not use pretrained model , and training of yolo models requires coordinates as well as the enclosing box dimensions of the cells in the training dataset , which we didn't have , hence we couldn't use this too .
 
