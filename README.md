@@ -56,7 +56,7 @@ Initially it gave too many blobs , however , after **thresholding the detected b
 
 This was all for the image processing approach . I also tried using the simpleblobdetector library from opencv , however it crashed on google colab notebook . Also tried opencv contour detecting functions but didn't work probably bcoz colab and opencv do not work well together .
 
-## Deep Learning approach :
+## Deep Learning approach , CONVLUTIONAL NEURAL NETWORKS :
 
 ![image](https://user-images.githubusercontent.com/86561124/157834080-86c0253a-d45d-4b6f-a069-3877443cd98c.png)
 
