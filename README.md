@@ -16,6 +16,26 @@ Then I decided to approach the problem statment using **image processing techniq
 
 ## Image Processing and blob detection algorithm approach towards cell counting problem :
 
+### Easy case solved by model :
+
+![image](https://user-images.githubusercontent.com/86561124/157831306-304e5f8e-780a-4514-890e-26c4c577c1ed.png)
+
+### Hard cases solved by model :
+
+![image](https://user-images.githubusercontent.com/86561124/157831538-3d9fef09-ee1a-4226-a557-30a6163f1e40.png)
+
+![image](https://user-images.githubusercontent.com/86561124/157831612-b211b52a-4434-4942-bfe8-531128de36e8.png)
+
+### The places where model goes wrong :
+(Last one being the major reason my model error was not single digit I feel )
+
+![image](https://user-images.githubusercontent.com/86561124/157831651-4594359f-2a03-430f-a5b3-1a7b8a570d1c.png)
+
+![image](https://user-images.githubusercontent.com/86561124/157831976-5827324c-a6e8-4e56-a742-9e39dc4b026f.png)
+
+
+
+
 We were required to count the blue stained cells .
 
 One initial and direct way to think is to do **masking** on the image using opencv . So masked the images for blue colour . However the results of masking were unsatisfactory , reason being that even in the brown part of the photos , there was blue part , which left lots of small dots and clouded the mask image with noise .
