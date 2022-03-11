@@ -17,9 +17,14 @@ The most commonly used method by researchers for the cell counting problem is us
 One other way that is commonly used to solve such problems is using **Xception ML model** . It is a state of the art model for this purpose , and is closely related to the Inception model . Xception architecture is a linear stack of depthwise separable convolution layers . Xception stands for “Extreme Inception”  . However , as we couldn't use pretrained models , and training such a computationally expensive model was not possible on google colab as a student , hence we didn't use this idea too .
 (Link to Xception research paper - https://arxiv.org/pdf/1610.02357v3.pdf ) 
 
+![image](https://user-images.githubusercontent.com/86561124/157843395-eda2f24d-92be-4f0c-8a79-42a02e943e79.png)
+
 
 
 A less common but still used way is using the **YOLO (You Only Look Once )** models for detection and counting of the cells . However , we could not use pretrained model , and training of yolo models requires coordinates as well as the enclosing box dimensions of the cells in the training dataset , which we didn't have , hence we couldn't use this too . ( Link for YOLO research paper : https://arxiv.org/pdf/1506.02640.pdf )
+
+![image](https://user-images.githubusercontent.com/86561124/157843200-eb89b61d-539c-4e64-a3e9-6f8841a8469c.png)
+
 
 Then I decided to approach the problem statment using **image processing techniques and blob detection algorithms** . My teammate on the other hand started approaching the problem with Convolutional Neural Networks (CNNs).
 
