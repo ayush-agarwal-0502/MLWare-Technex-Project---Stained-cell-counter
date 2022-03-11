@@ -35,3 +35,7 @@ Now , for the detection part , there are many Blob detecting algorithms , such a
 Initially it gave too many blobs , however , after thresholding the detected blobs by area ( i.e. ignoring the lower area blobs ) , we could achieve an MSE of about 14 , which seems to be pretty good . The model was not always exact , however it was pretty accurate (a difference of 1 or 2 mostly) in the cases of less overlapping cells . This showed that the error was high mostly due to the outlier cases ( overlapping cells , more than 50 cells in an image , whole image being largely covered with blue etc ) . Furthermore , by applying blurring , the accuracy was even more improved .
 
 This was all for the image processing approach . I also tried using the simpleblobdetector library from opencv , however it crashed on google colab notebook . 
+
+## Deep Learning approach :
+
+The images were fed to the Convolutional Neural Network . Since the dataset was huge , google colab kept throwing resource exhausion error a lot of times , hence training a huge convnet was not a feasible option without access to GPUs . Hence , we used a simple structure of the CNN , which somehow managed to perform slightly better than the image processing method ( almost equal performance ) . Adam optimiser was used , with MSE taken as the loss function . The model was trained with batch gradient descent taking batch  of 1000s . The model was trained for 10 epochs .
