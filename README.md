@@ -19,7 +19,7 @@ One other way that is commonly used to solve such problems is using **Xception M
 
 
 
-A less common but still used way is using the **YOLO (You Only Look Once )** models for detection and counting of the cells . However , we could not use pretrained model , and training of yolo models requires coordinates as well as the enclosing box dimensions of the cells in the training dataset , which we didn't have , hence we couldn't use this too .
+A less common but still used way is using the **YOLO (You Only Look Once )** models for detection and counting of the cells . However , we could not use pretrained model , and training of yolo models requires coordinates as well as the enclosing box dimensions of the cells in the training dataset , which we didn't have , hence we couldn't use this too . ( Link for YOLO research paper : https://arxiv.org/pdf/1506.02640.pdf )
 
 Then I decided to approach the problem statment using **image processing techniques and blob detection algorithms** . My teammate on the other hand started approaching the problem with Convolutional Neural Networks (CNNs).
 
