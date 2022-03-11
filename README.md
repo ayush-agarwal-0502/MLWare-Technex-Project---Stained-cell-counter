@@ -29,9 +29,11 @@ A less common but still used way is using the **YOLO (You Only Look Once )** mod
 ![image](https://user-images.githubusercontent.com/86561124/157843200-eb89b61d-539c-4e64-a3e9-6f8841a8469c.png)
 
 
-Then I decided to approach the problem statment using **image processing techniques and blob detection algorithms** . My teammate on the other hand started approaching the problem with Convolutional Neural Networks (CNNs).
+Then I decided to approach the problem statment using **image processing techniques and blob detection algorithms** . My teammate on the other hand started approaching the problem with **Convolutional Neural Networks (CNNs)**.
 
 ## Image Processing and blob detection algorithm approach towards cell counting problem :
+
+( See these images top to bottom , left to right for each case )(I've not used the masked output in processing)
 
 ### Easy case solved by model :
 
