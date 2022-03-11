@@ -58,4 +58,6 @@ This was all for the image processing approach . I also tried using the simplebl
 
 ## Deep Learning approach :
 
+![image](https://user-images.githubusercontent.com/86561124/157834080-86c0253a-d45d-4b6f-a069-3877443cd98c.png)
+
 The images were fed to the **Convolutional Neural Network** . Since the dataset was huge , google colab kept throwing resource exhausion error a lot of times , hence training a huge convnet was not a feasible option without access to GPUs . Hence , we used a **simple structure** of the CNN , which somehow managed to perform slightly better than the image processing method ( almost equal performance ) . Adam optimiser was used , with MSE taken as the loss function . The model was trained with batch gradient descent taking batch  of 1000s . The model was trained for 10 epochs .
