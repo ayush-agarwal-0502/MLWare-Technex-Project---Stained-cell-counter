@@ -12,7 +12,10 @@ The most commonly used method by researchers for the cell counting problem is us
 (Link to U Nets Image Segmentation for Biomedical Applications research paper - https://arxiv.org/pdf/1505.04597.pdf )
 
 ![image](https://user-images.githubusercontent.com/86561124/157840488-94b6fd79-964a-4da4-af91-1f038b74bd05.png)
-.  .    .   .   .   . ![image](https://user-images.githubusercontent.com/86561124/157840642-00116e32-ad42-45f9-bb95-f2c01bbc8b84.png)
+![image](https://user-images.githubusercontent.com/86561124/157840642-00116e32-ad42-45f9-bb95-f2c01bbc8b84.png)
+![image](https://user-images.githubusercontent.com/86561124/157845221-947d24d8-0391-4a7d-83f5-88a4f73860c6.png)
+
+
 
 One other way that is commonly used to solve such problems is using **Xception ML model** . It is a state of the art model for this purpose , and is closely related to the Inception model . Xception architecture is a linear stack of depthwise separable convolution layers . Xception stands for “Extreme Inception”  . However , as we couldn't use pretrained models , and training such a computationally expensive model was not possible on google colab as a student , hence we didn't use this idea too .
 (Link to Xception research paper - https://arxiv.org/pdf/1610.02357v3.pdf ) 
