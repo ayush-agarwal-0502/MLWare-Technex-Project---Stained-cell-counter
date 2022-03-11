@@ -34,7 +34,7 @@ Now , for the detection part , there are many Blob detecting algorithms , such a
 
 Initially it gave too many blobs , however , after thresholding the detected blobs by area ( i.e. ignoring the lower area blobs ) , we could achieve an MSE of about 14 , which seems to be pretty good . The model was not always exact , however it was pretty accurate (a difference of 1 or 2 mostly) in the cases of less overlapping cells . This showed that the error was high mostly due to the outlier cases ( overlapping cells , more than 50 cells in an image , whole image being largely covered with blue etc ) . Furthermore , by applying blurring , the accuracy was even more improved .
 
-This was all for the image processing approach . I also tried using the simpleblobdetector library from opencv , however it crashed on google colab notebook . 
+This was all for the image processing approach . I also tried using the simpleblobdetector library from opencv , however it crashed on google colab notebook . Also tried opencv contour detecting functions but didn't work probably bcoz colab and opencv do not work well together .
 
 ## Deep Learning approach :
 
