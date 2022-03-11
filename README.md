@@ -1,6 +1,6 @@
 # MLWare-Technex-Project---Stained-cell-counter
 
-This project is about using Machine Learning models for counting the number of stained cells in the given images . This project was a submission for the event "MLWare" , held under "Technex" , the official techfest of IIT BHU Varanasi . The team members were me ( Ayush Agarwal ) and Anshuman Asauliya . The model files have been attavhed to this repository .
+This project is about using Machine Learning models for counting the number of stained cells in the given images . This project was a submission for the event "MLWare" , held under "Technex" , the official techfest of IIT BHU Varanasi . The team members were me ( Ayush Agarwal ) and Anshuman Asauliya . The model files have been attached to this repository .
 
 ## Our approach towards the problem statment :
 
@@ -32,4 +32,6 @@ Now , we have a black image with the white patches representing stained cells . 
 
 Now , for the detection part , there are many Blob detecting algorithms , such as RegionProps ,Laplacian of Gaussian (LoG) , Difference of Gaussian (DoG) , Determinant of Hessian (DoH) in skimage ( scikit learn tools for images ) . Due to lack of time , I could only apply RegionProps . 
 
-Initially it gave too many blobs , however , after thresholding the detected blobs by area ( i.e. ignoring the lower area blobs ) , we could achieve an MSE of about 14 , which seems to be pretty good . The model was not always exact , however it was pretty accurate (a difference of 1 or 2 mostly) in the cases of non overlapping cells . This showed that the error was high mostly due to the outlier cases ( overlapping cells , more than 50 cells in an image , whole image being largely covered with blue etc ) 
+Initially it gave too many blobs , however , after thresholding the detected blobs by area ( i.e. ignoring the lower area blobs ) , we could achieve an MSE of about 14 , which seems to be pretty good . The model was not always exact , however it was pretty accurate (a difference of 1 or 2 mostly) in the cases of less overlapping cells . This showed that the error was high mostly due to the outlier cases ( overlapping cells , more than 50 cells in an image , whole image being largely covered with blue etc ) . Furthermore , by applying blurring , the accuracy was even more improved .
+
+This was all for the image processing approach . I also tried using the simpleblobdetector library from opencv , however it crashed on google colab notebook . 
